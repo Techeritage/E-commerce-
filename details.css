@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(235, 235, 235, 0.171);
+}
+
+.imgprod-grid {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin: 100px 30px 0px;
+}
+
+.quanadd {
+  width: fit-content;
+}
+
+.quanadd button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.img-cont img{
+  width: fit-content;
+  height: 350px;
+  object-fit: cover;
+}
+
+#heading {
+ text-align: start;
+ font-size: 32px;
+ letter-spacing: 1px;
+ margin-bottom: 10px;
+}
+
+#cost {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#pluSign, #minuSign, #addToCart {
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background-color: #6759ff;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#minuSign {
+  width: 40px;
+  margin-right: 5px;
+}
+
+select {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 60px;
+  padding: 5px;
+}
+
+#pluSign {
+  width: 40px;
+  margin-left: 5px;
+}
+
+#quantnum {
+  width: 150px;
+  color: #6759ff;
+  text-align: center;
+  border: 1px solid #6759ff;
+  border-radius: 5px;
+  background-color: white;
+  padding: 8px 0;
+}
+
+.prodet {
+  padding: 15px 10px 5px;
+  margin-left: 30px;
+}
+
+.prodet-cont {
+  margin: 0 30px 30px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px 20px 30px;
+}
+
+.prodet-cont ul {
+  margin: 5px 25px 0;
+  color: gray;
+}
+
+.caba {
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.relprod {
+  padding: 10px 30px 30px;
+  background-color: white;
+  height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+  .quanadd-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-cont img{
+    width: fit-content;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .caba {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .imgprod-grid {
+    grid-template-columns: 1fr;
+    padding: 10px 10px 30px;
+    margin: 80px 15px 0px;
+  }
+
+  .img-cont {
+    text-align: center;
+  }
+  .imgprod {
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 0.5px solid rgba(156, 156, 156, 0.527);
+  }
+
+  .prodet {
+    padding: 10px 10px 5px;
+    margin-left: 15px;
+  }
+  
+  .prodet-cont {
+    margin: 0 15px 20px;
+  }
+  
+
+}

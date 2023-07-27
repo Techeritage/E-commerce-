@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="head-grid">
+      <div class="adex"><h1>ADEX<span>Store</span></h1></div>
+      <div class="search-container">
+        <div id="search-container">
+          <form id="search-form" action="search.html" method="get">
+            <input type="text" name="query" placeholder="Search here...">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="cartprof">
+          <span>
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+            <div class="tooltip">Home</div>
+          </span>
+          <span>
+            <a href=""><ion-icon name="cart-outline"></ion-icon></a>
+            <div class="tooltip">Cart</div>
+          </span>
+          <span>
+            <a href=""><ion-icon name="person-outline"></ion-icon></a>
+            <div class="tooltip">Profile</div>
+          </span>
+        </div>  
+         
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="product">
+      <h3 id="searchQuery"></h3>
+      <div id="products"></div>
+    </div>   
+  </section>
+  <footer>
+    <nav>
+      <div class="ft-link">
+        <a href="index.html" id="home-link">
+          <ion-icon name="home"></ion-icon>
+          <div class="ft-name">Home</div>
+        </a>
+      </div>
+      <div class="ft-link">
+        <a href="cart.html" id="cart-link">
+          <ion-icon name="cart"></ion-icon>
+          <div class="ft-name">Cart</div>
+        </a>
+      </div>  
+      <div class="ft-link">
+        <a href="profile.html" id="profile-link">
+          <ion-icon name="person"></ion-icon>
+          <div class="ft-name">Profile</div>
+        </a>
+      </div> 
+    </nav>
+  </footer>
+  
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>

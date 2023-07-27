@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="details.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="head-grid">
+      <div class="adex"><h1>ADEX<span>Store</span></h1></div>
+      <div class="search-container">
+        <div id="search-container">
+          <form id="search-form" action="search.html" method="get">
+            <input type="text" name="query" placeholder="Search here...">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="cartprof">
+          <span>
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+            <div class="tooltip">Home</div>
+          </span>
+          <span>
+            <a href=""><ion-icon name="cart-outline"></ion-icon></a>
+            <div class="tooltip">Cart</div>
+          </span>
+          <span>
+            <a href=""><ion-icon name="person-outline"></ion-icon></a>
+            <div class="tooltip">Profile</div>
+          </span>
+        </div>  
+         
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="imgprod-grid">
+      <div class="imgprod">
+        <div class="img-cont">
+          <img src="" alt="product-image" id="img">
+        </div>
+      </div>
+      <div class="prodimg-cont">
+        <div class="prodimg">
+          <h1 id="heading"></h1>
+          <div class="caba">
+            <p>Category: <span id="category"></span></p>
+            <p>Brand: <span id="brand"></span></p>
+            <p>Availability: <span id="avail"></span></p>
+            <p id="cost"></p>
+          </div>
+          <form action="cart.html">
+            <div>
+              <label for="size"> Choose size</label>
+              <select name="size" id="size">
+                <option value="xl">XL</option>
+                <option value="l">L</option>
+                <option value="s">S</option>
+                <option value="xs">XS</option>
+              </select>
+            </div>
+
+            <div class="quanadd-cont">
+              <div class="quanadd">
+                <div class="quantity">
+                  <button id="minuSign">-</button>
+                  <div disabled id="quantnum">0</div>
+                  <button id="pluSign">+</button>
+                </div>
+                <button type="submit" id="addToCart">
+                  Add to Cart
+                </button>
+              </div>
+            </div> 
+          </form>
+            
+        
+        </div>
+      </div>
+    </div>
+    <h3 class="prodet">PRODUCT DETAILS</h3>
+    <div class="prodet-cont">
+      <h4 id="heading2"></h4>
+      <ul>
+        <li>color: red</li>
+        <li>sleeve: long</li>
+        <li>material: cotton</li>
+      </ul>
+    </div>
+
+    <div class="relprod">
+      <h3>RELATED PRODUCT</h3>
+      <div id="relprod"></div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <nav>
+      <div class="ft-link">
+        <a href="index.html" id="home-link">
+          <ion-icon name="home"></ion-icon>
+          <div class="ft-name">Home</div>
+        </a>
+      </div>
+      <div class="ft-link">
+        <a href="cart.html" id="cart-link">
+          <ion-icon name="cart"></ion-icon>
+          <div class="ft-name">Cart</div>
+        </a>
+      </div>  
+      <div class="ft-link">
+        <a href="profile.html" id="profile-link">
+          <ion-icon name="person"></ion-icon>
+          <div class="ft-name">Profile</div>
+        </a>
+      </div> 
+    </nav>
+  </footer>
+  
+  <script src="details.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
